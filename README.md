@@ -21,7 +21,7 @@ application's root:
   * Run bundle install
   * Configure database:
     ** Create the DB user by running command:
-    ```sudo -u postgres psql -c "CREATE USER admin WITH CREATEDB NOCREATEROLE PASSWORD 'admin'"```
+    ```psql -c "CREATE USER admin WITH CREATEDB NOCREATEROLE PASSWORD 'admin'"```
     ** Export the environment to set the credentials with
     ```export DATABASE_USERNAME=admin DATABASE_PASSWORD=admin```
     ** You can use direnv so that you don't need to export these environment variables every time, or change username/password in config/database.yml
